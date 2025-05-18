@@ -1,0 +1,6 @@
+app:
+  name: "MyApp PROD"
+  list:
+    - "prodValue1"
+    - "prodValue2"
+  env: "notDefault"

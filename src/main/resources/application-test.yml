@@ -1,0 +1,4 @@
+app:
+  name: ${APP_NAME:MyApp TEST}
+  list: ${APP_LIST:testValue1,testValue2}
+  env: ${APP_ENV:default}
