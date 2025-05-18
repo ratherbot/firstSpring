@@ -9,7 +9,7 @@ public class ExampleTestNotDefaultCondition implements Condition {
     @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         Environment env = context.getEnvironment();
-        String value = env.getProperty("EXAMPLE_TEST", "default");
+        String value = env.resolvePlaceholders("${EXAMPLE_TEST:default}");
         return !value.equals("default");
     }
 }
